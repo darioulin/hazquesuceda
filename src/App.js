@@ -4,6 +4,7 @@ import { BrowserRouter, Route } from 'react-router-dom';
 import Dashboard from './Containers/Dashboard/Dashboard';
 import Landing from './Containers/Landing/Landing';
 import Login from './Containers/Login/Login';
+import Pasos from './components/pasos/Pasos';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route exact path="/login" component={Login}/>
         <Route exact path="/dashboard" component={Dashboard}/>
       </BrowserRouter>
+      <Pasos/>
     </div>
   );
 }
